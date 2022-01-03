@@ -5,7 +5,7 @@ const { ethers } = require('ethers');
 const tweet = require('./tweet');
 const cache = require('./cache');
 
-// Format tweet text
+// Format tweet text!
 function formatAndSendTweet(event) {
     // Handle both individual items + bundle sales
     const assetName = _.get(event, ['asset', 'name'], _.get(event, ['asset_bundle', 'name']));
